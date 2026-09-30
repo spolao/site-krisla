@@ -541,3 +541,45 @@ p + p { margin-top: 1rem; }
   .photo-frame { max-width: 240px; }
   .hero { min-height: auto; padding-top: calc(var(--nav-height) + 2.5rem); padding-bottom: 3rem; }
 }
+
+/* ============================================
+   RESPONSIVE — CELULAR
+   ============================================ */
+@media (max-width: 600px) {
+  .section { padding: 3rem 1.25rem; }
+  .nav__inner { padding: 0 1.25rem; }
+  .mobile-menu { padding: 1rem 1.25rem 2rem; }
+
+  .hero { padding-top: calc(var(--nav-height) + 1.75rem); padding-bottom: 2.5rem; }
+  .hero__title { font-size: clamp(2rem, 9vw, 4rem); }
+
+  .hero__actions .btn,
+  #contato .btn,
+  #palestras .btn--outline,
+  .mobile-menu .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section__inner--split,
+  .section__inner--reverse,
+  .posicionamento-grid {
+    gap: 2rem;
+  }
+
+  .photo-frame { max-width: 200px; }
+  .posicionamento-photo { max-width: 260px; }
+
+  .statement { font-size: clamp(2rem, 9vw, 3.8rem); }
+  .rejection-list li { font-size: clamp(1rem, 4vw, 1.5rem); }
+
+  .fab-whatsapp {
+    width: 48px;
+    height: 48px;
+    right: 1rem;
+    bottom: calc(1rem + env(safe-area-inset-bottom));
+  }
+
+  .contact-links { gap: 1.25rem; }
+}

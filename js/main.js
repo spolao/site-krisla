@@ -49,6 +49,14 @@ document.querySelectorAll('.accordion__trigger').forEach((trigger) => {
   });
 });
 
+window.addEventListener('resize', () => {
+  const openTrigger = document.querySelector('.accordion__trigger[aria-expanded="true"]');
+  if (openTrigger) {
+    const panel = openTrigger.closest('.accordion__item').querySelector('.accordion__panel');
+    panel.style.maxHeight = panel.scrollHeight + 'px';
+  }
+});
+
 // ============================================
 // SCROLL REVEAL
 // ============================================
