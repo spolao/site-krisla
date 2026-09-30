@@ -41,9 +41,9 @@ Depois abra `http://localhost:8000` no navegador.
 |---|---|---|
 | Número de WhatsApp | 🟢 OK | Conectado: `+55 19 99880-1989`. |
 | Foto profissional | 🟢 OK | Foto da seção "Sobre" (`Fotos/1-Krisla.jpg`) e foto da seção "Posicionamento" (`Fotos/2-Krisla.jpg`) em uso. `Fotos/3-Krisla.jpg` não foi usada (selfie casual, qualidade/enquadramento abaixo do padrão profissional do resto do site) — avise se quiser incluí-la em algum lugar. |
-| Domínio | 🔴 PENDENTE | Trocar `SEUDOMINIO.com.br` em `index.html`, `robots.txt` e `sitemap.xml` pelo domínio real. |
+| Domínio | 🟢 OK | Publicado em `https://krislapsicologa.netlify.app` (Netlify, plano Free). `canonical`, `og:url`, `og:image`, JSON-LD, `robots.txt` e `sitemap.xml` já apontam para lá. Se a Krisla quiser um `.com.br` próprio, é trocar esses mesmos pontos pelo novo endereço. |
 | Bio detalhada | 🟡 SUGESTÃO | O texto da seção "Sobre" é intencionalmente enxuto — vale revisar com a Krisla e incluir formação, tempo de atuação, etc., se ela quiser. |
-| Imagem para redes sociais (Open Graph) | 🟡 SUGESTÃO | O `<meta property="og:image">` aponta para `assets/og-image.jpg`, que ainda não existe — adicionar uma imagem 1200×630px quando tiver foto/arte definida. |
+| Imagem para redes sociais (Open Graph) | 🟡 SUGESTÃO | O `<meta property="og:image">` usa `Fotos/1-Krisla.jpg` (URL absoluta), então a prévia de link já funciona. Ideal seria uma arte dedicada em 1200×630px, formato que o WhatsApp/Instagram esperam. |
 
 Tudo o mais (estrutura, textos das seções, FAQ, design, responsividade,
 acessibilidade, SEO básico) está **implementado e funcional**.
