@@ -429,9 +429,28 @@ p + p { margin-top: 1rem; }
 .band-text strong { color: var(--moss); font-weight: 500; }
 
 /* ============================================
-   ILLUSTRATION
+   PRIMEIRA SESSÃO GRATUITA
    ============================================ */
-.illustration { max-width: 260px; margin: 0 auto; }
+.free-session {
+  background: var(--cream);
+  border: 1px solid rgba(185,138,74,0.45);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 24px rgba(31,51,41,0.05);
+  padding: 3.25rem 3rem 3.5rem;
+  text-align: center;
+}
+.free-session__rule {
+  display: block;
+  width: 52px;
+  height: 2px;
+  margin: 0 auto 1.75rem;
+  background: var(--gold);
+}
+.free-session h2 {
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  margin-bottom: 1.25rem;
+}
+.free-session p { margin-bottom: 2.25rem; }
 
 /* ============================================
    ACCORDION
@@ -556,11 +575,14 @@ p + p { margin-top: 1rem; }
   .hero__actions .btn,
   #contato .btn,
   #palestras .btn--outline,
+  .free-session .btn,
   .mobile-menu .btn {
     width: 100%;
     justify-content: center;
     text-align: center;
   }
+
+  .free-session { padding: 2.25rem 1.5rem 2.5rem; }
 
   .section__inner--split,
   .section__inner--reverse,
