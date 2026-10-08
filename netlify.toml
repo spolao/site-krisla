@@ -1,0 +1,19 @@
+# Site estático: os arquivos já estão prontos na raiz do repositório,
+# não há etapa de build. Esta configuração faz o Netlify preencher
+# sozinho os campos ao conectar o repositório.
+[build]
+  publish = "."
+
+# Arquivos que existem no repositório mas não devem ficar acessíveis
+# no site publicado. Nos deploys manuais por zip eles ficavam de fora;
+# com o deploy conectado ao Git, todo o diretório é publicado, então
+# é aqui que eles são bloqueados.
+[[redirects]]
+  from = "/README.md"
+  to = "/index.html"
+  status = 404
+
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/index.html"
+  status = 404
