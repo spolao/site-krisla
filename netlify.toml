@@ -6,14 +6,19 @@
 
 # Arquivos que existem no repositório mas não devem ficar acessíveis
 # no site publicado. Nos deploys manuais por zip eles ficavam de fora;
-# com o deploy conectado ao Git, todo o diretório é publicado, então
-# é aqui que eles são bloqueados.
+# com o deploy conectado ao Git, todo o diretório é publicado.
+#
+# force = true é obrigatório aqui: sem ele o Netlify serve o arquivo
+# estático e ignora a regra, porque redirects só valem para caminhos
+# que não correspondem a um arquivo existente.
 [[redirects]]
   from = "/README.md"
   to = "/index.html"
   status = 404
+  force = true
 
 [[redirects]]
   from = "/netlify.toml"
   to = "/index.html"
   status = 404
+  force = true
