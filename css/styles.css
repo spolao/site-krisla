@@ -345,33 +345,20 @@ p + p { margin-top: 1rem; }
 }
 
 /* ============================================
-   POSICIONAMENTO / REJECTION LIST
+   POSICIONAMENTO
    ============================================ */
-.rejection-list {
-  margin-bottom: 2.2rem;
-}
-.rejection-list li {
-  font-family: var(--font-display);
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  color: #7C9179;
-  text-decoration: line-through;
-  text-decoration-color: rgba(185, 138, 74, 0.5);
-  padding: 0.25rem 0;
-  opacity: 0.75;
-}
-
 .statement {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 6vw, 3.8rem);
+  font-size: clamp(2.8rem, 6.5vw, 4.4rem);
   color: var(--cream);
   font-style: italic;
-  margin: 0.5rem 0 2.2rem;
+  margin: 0.5rem 0 2.4rem;
 }
 
 .statement-body {
-  max-width: 640px;
+  max-width: 680px;
 }
-.statement-body p { color: #C9D3C7; font-size: 1.05rem; }
+.statement-body p { color: #C9D3C7; font-size: 1.25rem; }
 
 .posicionamento-grid {
   display: grid;
@@ -593,8 +580,8 @@ p + p { margin-top: 1rem; }
   .photo-frame { max-width: 200px; }
   .posicionamento-photo { max-width: 260px; }
 
-  .statement { font-size: clamp(2rem, 9vw, 3.8rem); }
-  .rejection-list li { font-size: clamp(1rem, 4vw, 1.5rem); }
+  .statement { font-size: clamp(2.3rem, 10vw, 4.4rem); }
+  .statement-body p { font-size: 1.12rem; }
 
   .fab-whatsapp {
     width: 48px;
