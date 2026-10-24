@@ -207,6 +207,22 @@ p + p { margin-top: 1rem; }
   font-weight: 500;
 }
 .nav__leaf { color: var(--moss); flex-shrink: 0; }
+/* Nome + CRP: o CRP fica ao lado do nome e só desce para a linha de baixo se faltar espaço */
+.nav__brand-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.75rem;
+  line-height: 1.2;
+}
+.nav__crp {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--moss);
+  font-weight: 500;
+  white-space: nowrap;
+}
 .nav__links {
   display: flex;
   gap: 2rem;
